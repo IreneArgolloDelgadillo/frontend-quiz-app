@@ -1,0 +1,16 @@
+.App-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vh 10vw;
+
+  .menu-nav {
+    display: flex;
+    flex-direction: row;
+    /* padding: 0 20vw; */
+    .menu-nav-item {
+      padding: 0 3%;
+      flex-grow: 1;
+    }
+  }
+}
