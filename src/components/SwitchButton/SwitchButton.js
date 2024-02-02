@@ -1,11 +1,12 @@
 import './SwitchButton.css';
 import React, { useState } from 'react';
 
-const SwitchButton = () => {
+const SwitchButton = ({onChangeHandler} ) => {
   const [isSwitchOn, setSwitchOn] = useState(false);
 
-  const handleToggle = () => {
+  const handleToggle = (event) => {
     setSwitchOn((prevSwitchState) => !prevSwitchState);
+    onChangeHandler();
   };
 
   return (

@@ -1,5 +1,6 @@
 import "./App.css";
 import Header from "./components/Header/Header.js";
+import Home from "./pages/Home/Home.js";
 import { useTheme } from "./ThemeContext.js";
 
 function App() {
@@ -9,9 +10,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="app-content">
-        <p>This is a themed component</p>
-      </div>
+      <Home />
     </div>
   );
 }
