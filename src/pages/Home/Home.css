@@ -1,0 +1,64 @@
+.app-content {
+  display: flex;
+
+  .dashboard {
+    flex: 1;
+    padding: 1rem;
+    
+    .title {
+      font-size: 2.5rem;
+    }
+  }
+
+  .subject-list {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    .subject-item {
+      display: flex;
+      margin: 1rem;
+      padding: 0.5rem 1rem;
+      align-items: center;
+      border-radius: 10px;
+      max-height: 4vh;
+      max-width: 50vw;
+      background-color: var(--panel-transparency);
+
+      .subject-icon {
+        max-width: 30px;
+        max-height: 30px;
+        padding: 0.5rem;
+        flex-shrink: 1;
+        border-radius: 10px;
+      }
+      
+      .subject-text {
+        padding-left: 3vw;
+      }
+
+      .html-icon {
+        background-color: var(--color-orange);
+      }
+
+      .css-icon {
+        background: var(--color-green-soft);
+      }
+
+      .js-icon {
+        background-color: var(--color-blue);
+      }
+
+      .accesibility-icon {
+        background-color: var(--color-purple-soft);
+      }
+    }
+  }
+}
+
+@media( max-width: 768px) {
+  .app-content {
+    flex-direction: column;
+  }
+} 
