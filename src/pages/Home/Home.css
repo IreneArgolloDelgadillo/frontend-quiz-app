@@ -4,9 +4,23 @@
   .dashboard {
     flex: 1;
     padding: 1rem;
-    
+    display: flex;
+    flex-direction: column;
     .title {
       font-size: 2.5rem;
+    }
+
+    .progress-container {
+      margin-top: 10vh;
+      border-radius: 20px;
+      margin-top: 20px;
+      background-color: var(--progress-bar-progress-bar);
+    }
+    
+    .progress-bar {
+      border-radius: 20px;
+      height: 10px;
+      background-color: var(--color-purple);
     }
   }
 
@@ -24,6 +38,7 @@
       border-radius: 10px;
       max-height: 4vh;
       max-width: 50vw;
+      font-weight: bold;
       background-color: var(--panel-transparency);
 
       .subject-icon {
@@ -32,6 +47,15 @@
         padding: 0.5rem;
         flex-shrink: 1;
         border-radius: 10px;
+      }
+      
+      .letter-icon {
+        display: flex;
+        color: var(--color-dark-01);
+        border-radius: 10px;
+        width: 40px;
+        justify-content: center;
+        background-color: var(--icon-letter-background);
       }
       
       .subject-text {
@@ -53,6 +77,13 @@
       .accesibility-icon {
         background-color: var(--color-purple-soft);
       }
+    }
+
+    .answer-button {
+      background-color: var(--color-purple);
+      display: flex;
+      justify-content: center;
+      color: var(--color-white)
     }
   }
 }

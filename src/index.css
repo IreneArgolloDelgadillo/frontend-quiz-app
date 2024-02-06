@@ -14,10 +14,14 @@ body {
   background: var(--color-dark-05) url('../src/assets/images/pattern-background-desktop-light.svg') center/cover no-repeat; 
   --text-color: var(--color-dark-01);
   --panel-transparency: var(--color-white);
+  --icon-letter-background: var(--color-dark-05);
+  --progress-bar-progress-bar: var(--color-white);
 }
 
 [data-theme="dark"] {
   background: var(--color-dark-01) url('../src/assets/images/pattern-background-desktop-dark.svg') center/cover no-repeat; 
   --text-color: var(--color-white);
   --panel-transparency: var(--color-dark-05-transparency);
+  --icon-letter-background: var(--color-dark-03);
+  --progress-bar-progress-bar: var(--color-dark-05-transparency);
 }
